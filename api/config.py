@@ -11,6 +11,8 @@ class ConfigError(ValueError):
 
 
 class ConfigLoader:
+    """Loads server configuration from a JSON file."""
+
     def __init__(self, path: str):
         self.path = pathlib.Path(path)
 
